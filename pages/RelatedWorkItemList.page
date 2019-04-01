@@ -1,0 +1,21 @@
+<apex:page standardController="WorkItem__c" extensions="WorkItemRelatedStoryPoints">
+	<apex:form >
+        <apex:pageBlock >
+            
+            <apex:pageBlockSection title="WorkItem Status">
+                <apex:selectList value="{!statusOption}" size="1">
+                    <apex:selectOptions value="{! statusList }"/>
+                    <apex:actionSupport event="onchange" reRender="status_list" action="{!test}"/>
+                </apex:selectList>                    
+            </apex:pageBlockSection>
+            
+            <apex:outputPanel id="status_list">
+                <apex:pageBlockSection title="Related WorkItems Information">
+                    <apex:repeat value="{!workItems}" var="related">
+                        <apex:outputText value="{!related.Name}"></apex:outputText>
+                    </apex:repeat>
+                </apex:pageBlockSection>
+            </apex:outputPanel>
+        </apex:pageBlock>
+	</apex:form>
+</apex:page>
