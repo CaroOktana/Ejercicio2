@@ -67,9 +67,9 @@
     </applicationVisibilities>
     <classAccesses>
         <apexClass>WorkItemRelatedStoryPoints</apexClass>
-        <enabled>true</enabled>
+        <enabled>false</enabled>
     </classAccesses>
-    <custom>true</custom>
+    <custom>false</custom>
     <fieldPermissions>
         <editable>true</editable>
         <field>Project__c.End_Date__c</field>
@@ -119,36 +119,9 @@
     <layoutAssignments>
         <layout>WorkItem__c-WorkItem Layout</layout>
     </layoutAssignments>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>Project__c</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>Sprint__c</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>WorkItem__c</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
     <pageAccesses>
         <apexPage>RelatedWorkItemList</apexPage>
-        <enabled>true</enabled>
+        <enabled>false</enabled>
     </pageAccesses>
     <tabVisibilities>
         <tab>Getting_Started</tab>
